@@ -2,32 +2,59 @@
 
 namespace App\Enums;
 
+/**
+ * Neighborhoods / areas within Damascus governorate, Syria.
+ *
+ * The backed value is a Latin slug; Arabic and English labels are
+ * resolved at display time from the translation files (enums.city.*).
+ */
 enum City: string
 {
-    // KSA
-    case Riyadh = 'riyadh';
-    case Jeddah = 'jeddah';
-    case Mecca = 'mecca';
-    case Medina = 'medina';
-    case Dammam = 'dammam';
-    case Khobar = 'khobar';
-    case Dhahran = 'dhahran';
-    case Taif = 'taif';
-    case Tabuk = 'tabuk';
-    case Abha = 'abha';
-    case Khamis = 'khamis_mushait';
-    case Jubail = 'jubail';
-    case Hail = 'hail';
-    case Najran = 'najran';
-    case Yanbu = 'yanbu';
-    case Qassim = 'qassim';
-    case Buraidah = 'buraidah';
+    // Western Damascus
+    case Muhajirin = 'muhajirin';
+    case Maliki = 'maliki';
+    case RuknAlDin = 'rukn_al_din';
+    case Salihiyah = 'salihiyah';
+    case Afif = 'afif';
+    case JisrAbyad = 'jisr_abyad';
+    case Shaalan = 'shaalan';
+    case AbuRummaneh = 'abu_rummaneh';
+    case Rawda = 'rawda';
+    case Mazzeh = 'mazzeh';
+    case MazzehVillat = 'mazzeh_villat';
+    case KafrSousseh = 'kafr_sousseh';
+    case Baramkeh = 'baramkeh';
+    case Mazraa = 'mazraa';
 
-    // UAE
-    case Dubai = 'dubai';
-    case AbuDhabi = 'abu_dhabi';
-    case Sharjah = 'sharjah';
-    case Ajman = 'ajman';
+    // Central / Old City
+    case Marjeh = 'marjeh';
+    case Qassaa = 'qassaa';
+    case BabTouma = 'bab_touma';
+    case BabSharqi = 'bab_sharqi';
+    case Qaymariyya = 'qaymariyya';
+    case Shaghour = 'shaghour';
+    case Amara = 'amara';
+    case SouqSaruja = 'souq_saruja';
+    case Qanawat = 'qanawat';
+    case Hariqa = 'hariqa';
+
+    // Southern Damascus
+    case Midan = 'midan';
+    case Qadam = 'qadam';
+    case NahrAisha = 'nahr_aisha';
+    case Zahira = 'zahira';
+    case Tadamon = 'tadamon';
+    case BabMusalla = 'bab_musalla';
+    case BabSrija = 'bab_srija';
+
+    // Northern / Eastern Damascus
+    case Jobar = 'jobar';
+    case Qaboun = 'qaboun';
+    case Barzeh = 'barzeh';
+    case Adawi = 'adawi';
+    case Tijara = 'tijara';
+    case Dummar = 'dummar';
+    case DummarProject = 'dummar_project';
 
     public function label(): string
     {
