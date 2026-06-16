@@ -3,6 +3,7 @@
 namespace App\Filament\Resources;
 
 use App\Enums\BodyType;
+use App\Enums\Brand;
 use App\Enums\CarStatus;
 use App\Enums\City;
 use App\Enums\Color;
@@ -94,11 +95,12 @@ class CarResource extends Resource
                     Forms\Components\Section::make(__('admin.sections.vehicle'))
                         ->schema([
                             Forms\Components\Grid::make(2)->schema([
-                                Forms\Components\TextInput::make('brand')
+                                Forms\Components\Select::make('brand')
                                     ->label(__('cars.fields.brand'))
                                     ->required()
-                                    ->maxLength(80)
-                                    ->datalist(fn () => Car::query()->distinct()->orderBy('brand')->pluck('brand')->all()),
+                                    ->options(Brand::options())
+                                    ->native(false)
+                                    ->searchable(),
 
                                 Forms\Components\TextInput::make('model')
                                     ->label(__('cars.fields.model'))
