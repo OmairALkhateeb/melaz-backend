@@ -1,0 +1,71 @@
+<?php
+
+return [
+    'model' => [
+        'singular' => 'Car',
+        'plural' => 'Cars',
+    ],
+
+    'fields' => [
+        'title' => 'Listing title',
+        'slug' => 'Slug',
+        'brand' => 'Brand',
+        'model' => 'Model',
+        'trim' => 'Trim',
+        'body_type' => 'Body type',
+        'year' => 'Year',
+        'color' => 'Color',
+        'price' => 'Price',
+        'currency' => 'Currency',
+        'origin' => 'Origin',
+        'mileage' => 'Mileage',
+        'transmission' => 'Transmission',
+        'fuel_type' => 'Fuel type',
+        'engine_size' => 'Engine size',
+        'drivetrain' => 'Drivetrain',
+        'condition' => 'Condition',
+        'city' => 'City',
+        'description' => 'Description',
+        'whatsapp_number' => 'WhatsApp number',
+        'status' => 'Listing status',
+        'is_featured' => 'Featured',
+        'published_at' => 'Published at',
+        'created_at' => 'Created at',
+        'updated_at' => 'Updated at',
+        'image' => 'Image',
+        'images' => 'Images',
+        'alt_text' => 'Alt text',
+        'sort_order' => 'Sort order',
+        'is_primary' => 'Primary',
+        'primary_image' => 'Primary image',
+        'gallery' => 'Additional images',
+    ],
+
+    'placeholders' => [
+        'title' => 'e.g. 2023 Toyota Camry — Automatic — Full options',
+        'whatsapp_number' => '+966512345678',
+        'engine_size' => 'e.g. 2.0L or 3.5L V6',
+    ],
+
+    'helpers' => [
+        'title' => 'Type the name in whichever language you prefer. It is shown to visitors as-is.',
+        'description' => 'Optional detailed description. Shown only on the car detail page.',
+        'slug' => 'Auto-generated from the listing title. Change with care — public URLs depend on it.',
+        'whatsapp' => 'Include the country code (starts with +). Used by the WhatsApp button on the public site.',
+        'published_at' => 'The car only becomes public after this date/time. Leave empty to keep as a draft.',
+        'is_primary' => 'Used as the card/cover image. Only one image can be primary per car.',
+        'primary_image' => 'Cover photo shown on cards and at the top of the car page.',
+        'gallery' => 'Extra photos shown in the car gallery. Upload several and reorder them.',
+    ],
+
+    'sort' => [
+        'newest' => 'Newest',
+        'oldest' => 'Oldest',
+        'price_low' => 'Price: Low to High',
+        'price_high' => 'Price: High to Low',
+        'mileage_low' => 'Mileage: Low to High',
+        'mileage_high' => 'Mileage: High to Low',
+        'year_new' => 'Year: Newest First',
+        'year_old' => 'Year: Oldest First',
+    ],
+];

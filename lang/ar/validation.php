@@ -1,0 +1,43 @@
+<?php
+
+return [
+    'accepted' => 'يجب قبول :attribute.',
+    'after' => 'يجب أن يكون :attribute تاريخاً بعد :date.',
+    'after_or_equal' => 'يجب أن يكون :attribute تاريخاً بعد أو يساوي :date.',
+    'alpha' => 'يجب أن يحتوي :attribute على أحرف فقط.',
+    'alpha_dash' => 'يجب أن يحتوي :attribute على أحرف وأرقام وشرطات فقط.',
+    'alpha_num' => 'يجب أن يحتوي :attribute على أحرف وأرقام فقط.',
+    'array' => 'يجب أن يكون :attribute مصفوفة.',
+    'before' => 'يجب أن يكون :attribute تاريخاً قبل :date.',
+    'between' => [
+        'numeric' => 'يجب أن يكون :attribute بين :min و :max.',
+        'string' => 'يجب أن يكون :attribute بين :min و :max حرفاً.',
+    ],
+    'boolean' => 'يجب أن يكون حقل :attribute صحيحاً أو خاطئاً.',
+    'confirmed' => 'تأكيد :attribute غير مطابق.',
+    'date' => 'يجب أن يكون :attribute تاريخاً صحيحاً.',
+    'different' => 'يجب أن يكون :attribute و :other مختلفين.',
+    'email' => 'يجب أن يكون :attribute بريداً إلكترونياً صالحاً.',
+    'exists' => ':attribute المحدد غير موجود.',
+    'image' => 'يجب أن يكون :attribute صورة.',
+    'in' => ':attribute المحدد غير صالح.',
+    'integer' => 'يجب أن يكون :attribute عدداً صحيحاً.',
+    'max' => [
+        'numeric' => 'يجب ألا يتجاوز :attribute :max.',
+        'string' => 'يجب ألا يتجاوز :attribute :max حرفاً.',
+        'file' => 'يجب ألا يتجاوز حجم :attribute :max كيلوبايت.',
+    ],
+    'min' => [
+        'numeric' => 'يجب أن يكون :attribute :min على الأقل.',
+        'string' => 'يجب أن يكون :attribute :min حرفاً على الأقل.',
+        'file' => 'يجب أن يكون حجم :attribute :min كيلوبايت على الأقل.',
+    ],
+    'mimes' => 'يجب أن يكون :attribute ملفاً من نوع: :values.',
+    'numeric' => 'يجب أن يكون :attribute رقماً.',
+    'required' => 'حقل :attribute مطلوب.',
+    'string' => 'يجب أن يكون :attribute نصاً.',
+    'unique' => ':attribute مستخدم من قبل.',
+    'url' => 'يجب أن يكون :attribute رابطاً صالحاً.',
+    'custom' => [],
+    'attributes' => [],
+];
