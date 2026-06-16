@@ -77,7 +77,8 @@ sudo mysql
 ```
 ```sql
 CREATE DATABASE melaz CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-CREATE USER 'melaz_user'@'127.0.0.1' IDENTIFIED BY 'CHANGE_ME_STRONG_DB_PASSWORD';
+-- Use the DB_PASSWORD value from your local .env.production (it is pre-filled there).
+CREATE USER 'melaz_user'@'127.0.0.1' IDENTIFIED BY 'PASTE_DB_PASSWORD_FROM_.env.production';
 GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, ALTER, INDEX, DROP, REFERENCES
   ON melaz.* TO 'melaz_user'@'127.0.0.1';
 FLUSH PRIVILEGES;
@@ -106,11 +107,16 @@ composer install --no-dev --optimize-autoloader --no-interaction
 ```bash
 cp .env.production .env
 php artisan key:generate          # fills APP_KEY
-nano .env                         # set DB_PASSWORD, ADMIN_PASSWORD, confirm CORS
+nano .env                         # review (DB/admin passwords are pre-filled)
 ```
 
-Double-check: `APP_ENV=production`, `APP_DEBUG=false`,
+`DB_PASSWORD` and `ADMIN_PASSWORD` come pre-filled with strong generated values;
+`DB_PASSWORD` already matches the MySQL user created in §3 — no need to change
+either to go live. Double-check: `APP_ENV=production`, `APP_DEBUG=false`,
 `APP_URL=https://melaz-motors.livetech.it.com`.
+
+> After your first admin login, rotate the password from the Filament UI
+> (top-right account menu) so it no longer lives in `.env`.
 
 ---
 
